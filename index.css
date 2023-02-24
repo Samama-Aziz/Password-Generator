@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 0 0 rgb(0 0 0 / 10%);
+  width: 100%;
+  height: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  position: fixed;
+  z-index: 5;
+}
+
+.nav h1 {
+  color: black;
+}
+
+.nav span,
+.main span {
+  color: #d22;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 4rem;
+  align-items: center;
+  background-color: #caedf7;
+  width: 100%;
+  height: fit-content;
+}
+
+.title {
+  width: 50%;
+  height: fit-content;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+}
+
+.password_container {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 8rem;
+  margin-top: 2rem;
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  border: 1px;
+}
+.password {
+  width: 80%;
+  height: 3rem;
+  margin: 2rem 0;
+  margin-left: 1rem;
+  margin-top: 2.5rem;
+  text-align: left;
+  padding: 0 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+#copy_btn {
+  width: 40px;
+  height: 40px;
+  margin: 2.5rem 0;
+
+  cursor: pointer;
+}
+#reload_btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 1.5rem;
+  margin: 2.5rem 1rem;
+  /* margin-right: 2rem; */
+  cursor: pointer;
+}
+
+.Customize_password {
+  display: block;
+  width: 60%;
+  height: 18rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  border: 1px;
+}
+
+.mainline {
+  font-family: "Righteous", cursive;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid #f0f2f5;
+  line-height: 2.7rem;
+  margin-bottom: 26px;
+}
+
+.range {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2rem;
+  column-gap: 5rem;
+}
+.input_range {
+  flex-basis: 70%;
+}
+.input_range p {
+  font-size: 1.25rem;
+  font-weight: 540;
+}
+#numberfeild {
+  margin-top: 2rem;
+  box-shadow: inset 0 1px 2px 0 rgb(0 0 0 / 25%);
+  height: 2rem;
+  text-align: center;
+  width: 4rem;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  font-size: 16px;
+}
+#rangefeild {
+  -webkit-appearance: none;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  outline: none;
+  width: 70%;
+  height: 1rem;
+  background-color: #f3f3f3;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 5px rgb(0 0 0 1);
+  overflow: hidden;
+}
+
+#rangefeild::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(218, 218, 218);
+  box-shadow: -410px 0 0 400px #d22;
+}
+
+.Checkboxlist {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  margin: 1rem 0;
+}
+.Check {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.Check h3 {
+  margin-left: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.Check h3 span {
+  color: #d22;
+}
+.Check input {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  accent-color: #d22;
+}
+
+.generate_btn {
+  display: flex;
+  margin: 2rem 0;
+}
+#password_btn {
+  min-height: 3rem;
+  font-family: "Righteous", cursive;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 0.9rem;
+  color: white;
+  background-color: #d22;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+#password_btn:hover {
+  color: #d22;
+  background-color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .main {
+    height: fit-content;
+  }
+  .password_container {
+    width: 95%;
+    height: 7rem;
+  }
+  .password {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    margin-left: 0.5rem;
+  }
+  #copy_btn,
+  #reload_btn {
+    width: 30px;
+    height: 30px;
+
+  }
+  #reload_btn {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  .Customize_password {
+    width: 95%;
+    height: fit-content;
+  }
+  .mainline {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  .range {
+    flex-direction: column;
+  }
+  #numberfeild {
+    width: 3rem;
+  }
+  #rangefeild {
+    width: 60%;
+  }
+  .Checkboxlist {
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+  }
+  .check h3 {
+    font-size: 0.25em;
+  }
+  .Check input {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

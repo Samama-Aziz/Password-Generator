@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="nav">
+
+        <h1>Best<span>Pass•••</span></h1>
+    </div>
+    <!-- <div class="main">
+        <div class="title">
+            <h1>Instantly generate a secure, random password with the Best<span>Pass•••</span> online tool</h1>   
+        </div>
+        <div class="password">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo deleniti minima doloribus ad iste quisquam itaque, possimus sed. Debitis expedita ex quae consequuntur odit cum saepe adipisci molestias tempore repellendus.</p>
+        </div>
+    </div> -->
+    <div class="main">
+        <div class="title">
+            <h1>Instantly generate a secure, random password with the Best<span>Pass•••</span> online tool</h1>
+        </div>
+        <div class="password_container">
+            <input type="text" class="password" id="password" spellcheck="false">
+            <img src="./Sources/copy.svg" alt="" id="copy_btn">
+            <img src="./Sources/reload.svg" alt="" id="reload_btn">
+        </div>
+        <div class="Customize_password">
+            <div class="mainline">
+                Customize your password
+            </div>
+            <div class="range">
+                <div class="input_range">
+                    <p>Password Length</p>
+                    <input type="number" min="1" max="50" id="numberfeild" >
+                    <input type="Range" min="1" max="50" id="rangefeild">
+                </div>
+                <div class="Checkboxlist">
+                    <div class="Check">
+                        <input type="checkbox" class="Checkbox" id="Lowercase" checked>
+                        <label for="Lowercase">
+                            <h3><span>Lower</span>case</h3>
+                        </label>
+
+                    </div>
+                    <div class="Check">
+                        <input type="checkbox" class="Checkbox" id="Uppercase">
+                        <label for="Uppercase">
+                            <h3><span>Upper</span>case</h3>
+                        </label>
+                    </div>
+                    <div class="Check">
+                        <input type="checkbox" class="Checkbox" id="Numbers"><label for="Numbers">
+                            <h3><span>Num</span>bers</h3>
+                        </label>
+                    </div>
+                    <div class="Check">
+                        <input type="checkbox" class="Checkbox" id="Symbols">
+                        <label for="Symbols">
+                            <h3><span>Sym</span>bols</h3>
+
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="generate_btn">
+            <input type="button" value="Generate Password" id="password_btn" onclick="generate()">
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
