@@ -8,16 +8,15 @@
 
 .nav {
   display: flex;
+  position: fixed;
   justify-content: center;
-  margin-top: 0;
   align-items: center;
-  background-color: #ffffff;
-  box-shadow: 0 2px 0 0 rgb(0 0 0 / 10%);
   width: 100%;
   height: 4rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
-  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 2px 0 0 rgb(0 0 0 / 10%);
   z-index: 5;
 }
 
@@ -34,11 +33,11 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  margin-top: 4rem;
   align-items: center;
-  background-color: #caedf7;
   width: 100%;
   height: fit-content;
+  margin-top: 4rem;
+  background-color: #caedf7;
 }
 
 .title {
@@ -62,6 +61,7 @@
   box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
   border: 1px;
 }
+
 .password {
   width: 80%;
   height: 3rem;
@@ -75,24 +75,45 @@
   font-weight: bold;
   border: none;
 }
+
 textarea:focus,
 input:focus {
   outline: none;
 }
+
 #copy_btn {
   width: 40px;
   height: 40px;
   margin: 2.5rem 0;
-
   cursor: pointer;
 }
+
 #reload_btn {
   width: 40px;
   height: 40px;
   margin-left: 1.5rem;
   margin: 2.5rem 1rem;
-  /* margin-right: 2rem; */
   cursor: pointer;
+}
+
+.strenght{
+  position: relative;
+  margin-top: -0.5rem;
+  height: 0.75rem;
+  width: 60%;
+  border-radius: 0 0 5px  5px;
+  background-color: #dcdcdc;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  transition: 0.5s;
+
+}
+
+#strenght_bar{
+  position:absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #d22;
+  border-radius: 0 0 5px  5px;
 }
 
 .Customize_password {
@@ -103,7 +124,7 @@ input:focus {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
-  border: 1px;
+  border: 1px;  
 }
 
 .mainline {
@@ -112,9 +133,9 @@ input:focus {
   font-size: 2rem;
   margin-left: 2rem;
   margin-top: 1rem;
+  margin-bottom: 26px;
   border-bottom: 2px solid #f0f2f5;
   line-height: 2.7rem;
-  margin-bottom: 26px;
 }
 
 .range {
@@ -131,27 +152,28 @@ input:focus {
   font-weight: 540;
 }
 #numberfeild {
-  margin-top: 2rem;
-  box-shadow: inset 0 1px 2px 0 rgb(0 0 0 / 25%);
-  height: 2rem;
-  text-align: center;
   width: 4rem;
-  background-color: #fff;
-  border: 1px solid #c8c8c8;
-  border-radius: 5px;
+  height: 2rem;
+  margin-top: 2rem;
   font-size: 16px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: inset 0 1px 2px 0 rgb(0 0 0 / 25%);
+  border-radius: 5px;
+  border: 1px solid #c8c8c8;
 }
+
 #rangefeild {
   -webkit-appearance: none;
+  overflow: hidden;
   margin-left: 1rem;
   margin-top: 1rem;
-  outline: none;
   width: 70%;
   height: 1rem;
   background-color: #f3f3f3;
   border-radius: 0.5rem;
   box-shadow: inset 0 0 5px rgb(0 0 0 1);
-  overflow: hidden;
+  outline: none;
 }
 
 #rangefeild::-webkit-slider-thumb {
@@ -169,6 +191,7 @@ input:focus {
   flex-basis: 30%;
   margin: 1rem 0;
 }
+
 .Check {
   display: flex;
   margin: 0.5rem 0;
@@ -180,9 +203,11 @@ input:focus {
   font-weight: 600;
   font-size: 1.5rem;
 }
+
 .Check h3 span {
   color: #d22;
 }
+
 .Check input {
   width: 1.5rem;
   height: 1.5rem;
@@ -194,20 +219,22 @@ input:focus {
   display: flex;
   margin: 2rem 0;
 }
+
 #password_btn {
   min-height: 3rem;
+  padding: 0.9rem;
+  border: none;
   font-family: "Righteous", cursive;
   font-weight: 500;
   font-size: 1.5rem;
-  padding: 0.9rem;
   color: white;
-  background-color: #d22;
   border-radius: 2rem;
-  border: none;
+  background-color: #d22;
   box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
   transition: 0.5s;
   cursor: pointer;
 }
+
 #password_btn:hover {
   color: #d22;
   background-color: white;
@@ -218,24 +245,33 @@ input:focus {
     font-size: 1rem;
     width: 80%;
   }
+
   .main {
     height: fit-content;
   }
+
   .password_container {
     width: 95%;
     height: 7rem;
   }
+
+  .strenght{
+    width: 95%;
+  }
+
   .password {
     font-size: 1.5rem;
     margin: 2rem 0;
     margin-left: 0.5rem;
   }
+
   #copy_btn,
   #reload_btn {
     width: 30px;
     height: 30px;
 
   }
+
   #reload_btn {
     margin-left: 0.5rem;
     margin-right: 1rem;
@@ -245,26 +281,33 @@ input:focus {
     width: 95%;
     height: fit-content;
   }
+
   .mainline {
     font-size: 1.5rem;
     margin-left: 1.5rem;
   }
+
   .range {
     flex-direction: column;
   }
+
   #numberfeild {
     width: 3rem;
   }
+
   #rangefeild {
     width: 60%;
   }
+
   .Checkboxlist {
     margin-left: 0.5rem;
     margin-top: 2rem;
   }
+
   .check h3 {
     font-size: 0.25em;
   }
+  
   .Check input {
     width: 1.2rem;
     height: 1.2rem;
