@@ -111,7 +111,7 @@ function findscore(password) {
   if (password.length > 7) {
     strength += 1;
   }
-  
+
 
   if (password.match(/[a-z]/) && password.match(/[A-Z]/)) {
     strength += 1;
